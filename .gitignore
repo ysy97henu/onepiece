@@ -1,0 +1,10 @@
+#忽略指定文件夹
+.mvn
+.idea
+target
+src/test
+
+#忽略指定后缀
+*.iml
+*.cmd
+HELP.md
