@@ -1,19 +1,19 @@
 ### onepiece
 OnePiece by Yin Songyuan
 
-####Version Zaanse Schans
-`Íê³ÉÏîÄ¿³õÊ¼»¯`
-+ ´î½¨ÏîÄ¿
-+ »ù´¡×é¼þÒýÈë   
-   + Êý¾ÝÏà¹Ø£º   
-      + ¹ØÏµÐÍÊý¾Ý¿â Ë«Êý¾ÝÔ´ mybatis jpa
-      + ·Ç¹ØÏµÐÍÊý¾Ý¿â redis mongo
+#### Version Zaanse Schans
+`å®Œæˆé¡¹ç›®åˆå§‹åŒ–`
++ æ­å»ºé¡¹ç›®
++ åŸºç¡€ç»„ä»¶å¼•å…¥   
+   + æ•°æ®ç›¸å…³ï¼š   
+      + å…³ç³»åž‹æ•°æ®åº“ åŒæ•°æ®æº mybatis jpa
+      + éžå…³ç³»åž‹æ•°æ®åº“ redis mongo
       + es
-   + ÏûÏ¢ÖÐ¼ä¼þ£º
+   + æ¶ˆæ¯ä¸­é—´ä»¶ï¼š
       + kafka
-+ Íê³É»ù´¡×é¼þ »ù´¡DEMO²âÊÔ
-+ ÈÕÖ¾ÏµÍ³¹¹½¨
-+ ÓÃ»§µÇÂ½×¢²á¼øÈ¨²ßÂÔ
++ å®ŒæˆåŸºç¡€ç»„ä»¶ åŸºç¡€DEMOæµ‹è¯•
++ æ—¥å¿—ç³»ç»Ÿæž„å»º
++ ç”¨æˆ·ç™»é™†æ³¨å†Œé‰´æƒç­–ç•¥
 
 #### Version kaya
-`»ù´¡·þÎñ´úÂë±àÐ´`
+`åŸºç¡€æœåŠ¡ä»£ç ç¼–å†™`
