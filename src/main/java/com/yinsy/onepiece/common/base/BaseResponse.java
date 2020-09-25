@@ -24,4 +24,9 @@ public class BaseResponse<T> {
         this.msg = BaseConstant.SUCCESS;
         this.data = data;
     }
+
+    public BaseResponse(Integer code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
 }
