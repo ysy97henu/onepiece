@@ -11,6 +11,8 @@ OnePiece by Yin Songyuan
       + es
    + 消息中间件：
       + kafka
++ 通用接口
+   + 自动建类： 根据数据库表自动生成分层业务架构及相关类  `package com.yinsy.onepiece.common.jpa.autoProduction`
 + 完成基础组件 基础DEMO测试
 + 日志系统构建
 + 用户登陆注册鉴权策略
