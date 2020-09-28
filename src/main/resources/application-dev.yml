@@ -4,3 +4,10 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
+#  security:
+#    user:
+#      name: onepiece
+#      password: 123456
+  # 禁用Security
+#  autoconfigure:
+#    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration

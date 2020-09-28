@@ -6,16 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("demo")
-public class DemoController {
+@RequestMapping("/auth")
+public class AuthorityController {
 
-    @GetMapping("first")
+    @GetMapping("test-frist")
     public BaseResponse firstDemo(String param){
-        return new BaseResponse(param);
-    }
-
-    @GetMapping("second")
-    public BaseResponse secondDemo(String param){
         return new BaseResponse(param);
     }
 
