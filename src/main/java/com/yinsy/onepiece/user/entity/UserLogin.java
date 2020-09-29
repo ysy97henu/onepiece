@@ -23,6 +23,11 @@ public class UserLogin {
     private String loginId;
 
     /**
+     * 用户密码
+     */
+    private String loginPassword;
+
+    /**
     * 用户业务主键
     **/
     private String userId;

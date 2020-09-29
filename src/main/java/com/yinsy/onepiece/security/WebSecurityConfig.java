@@ -5,7 +5,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
@@ -36,14 +35,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-                // 配置密码加密方式
-                .passwordEncoder(new BCryptPasswordEncoder())
-                // 配置用户名密码
-                .withUser("user")
-                .password(new BCryptPasswordEncoder().encode("123456"))
-                // 配置角色信息
-                .roles("USER");
+        // 内存验证
+//        auth.inMemoryAuthentication()
+//                // 配置密码加密方式
+//                .passwordEncoder(new BCryptPasswordEncoder())
+//                // 配置用户名密码
+//                .withUser("user")
+//                .password(new BCryptPasswordEncoder().encode("123456"))
+//                // 配置角色信息
+//                .roles("USER");
     }
 
     /**
@@ -73,10 +73,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
          * csrf() 相关
          *  csrf().disable() 禁用跨站csrf攻击
          */
-        http.authorizeRequests()
-                .antMatchers("/demo/first","/auth/**").permitAll()
+
+        /**
+         * 常用配置：
+         *  验证请求:
+         *   antMatchers 添加过滤URL
+         *      permitAll() 全部可通过
+         */
+        http
+                .csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/demo/first", "/auth/**", "/user/login").anonymous()
+//                .antMatchers(HttpMethod.POST,"/user/login").permitAll()
                 .anyRequest().authenticated().and()
-                .formLogin().and()
                 .httpBasic();
 
     }

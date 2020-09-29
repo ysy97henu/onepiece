@@ -3,11 +3,18 @@ spring:
     url: jdbc:mysql://localhost:3306/onepiece?serverTimezone=UTC
     username: root
     password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
-#  security:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  config: classpath:log/logback-spring.xml
+  level:
+    com.yinsy.onepiece: debug
+#    org.hibernate.type.descriptor.sql.BasicBinder: trace
+  #  security:
 #    user:
 #      name: onepiece
 #      password: 123456
   # 禁用Security
-#  autoconfigure:
-#    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
