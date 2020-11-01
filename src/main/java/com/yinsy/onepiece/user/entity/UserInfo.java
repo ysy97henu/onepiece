@@ -1,16 +1,21 @@
 package com.yinsy.onepiece.user.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 @Entity
 @Table
 @Data
-public class UserInfo {
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserInfo implements Serializable {
     @Id
     /**
     * 用户自增主键
